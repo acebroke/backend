@@ -7,7 +7,7 @@ const { helloUser, Addition } = require("../modules/displayUser");
 
 
 router.post("/hello/:name", function (req, res) {
-  helloUser(req.params.name);
+  helloUser(req.body.name);
   res.json({ title: "Hello World ! " });
 });
 
